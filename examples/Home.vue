@@ -1,9 +1,11 @@
 <template>
   <div
-    v-loading="loading"
-    xg-loading-text="拼命加载中"
+    v-loading.fullscreen="loading"
     class="page-home"
-  />
+    @click="load"
+  >
+    <p>小光爱吃肉</p>
+  </div>
 </template>
 
 <script>
@@ -11,13 +13,16 @@
       name: "Home",
       data() {
         return {
-          loading: true
+          loading: false
         }
       },
-      mounted() {
-        setTimeout(() => {
-          this.loading = false
-        }, 3000)
+      methods: {
+        load() {
+          this.loading = true
+          setTimeout(() => {
+            this.loading = false
+          }, 3000)
+        }
       }
     }
 </script>
