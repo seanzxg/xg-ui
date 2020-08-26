@@ -144,3 +144,20 @@ $--button-disabled-background-color: $--color-white !default;
 /// color||Color|0
 $--button-disabled-border-color: $--border-color-lighter !default;
 
+
+
+/* Loading
+--------------------------*/
+$--loading-spinner-size: 42px !default;
+
+/* Dialog
+--------------------------*/
+
+$--dialog-backgroud-color: $--color-white!default;
+$--dialog-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !default;
+
+/* Popup
+-------------------------- */
+
+$--popup-modal-background-color: $--color-black !default;
+$--popup-modal-opacity: 0.5 !default;

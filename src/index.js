@@ -1,8 +1,10 @@
-import Button from '../packages/button/index.js';
-import Loading from '../packages/loading/index.js'
+import Button from '../packages/button/index';
+import Loading from '../packages/loading/index'
+import Dialog from '../packages/dialog/index'
 
 const components = [
-    Button
+    Button,
+    Dialog
 ];
 
 const install = function(Vue) {
@@ -22,5 +24,6 @@ export default {
     version: '1.0.0',
     install,
     Button,
-    Loading
+    Loading,
+    Dialog
 };

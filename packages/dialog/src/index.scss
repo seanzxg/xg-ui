@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import "../../theme-chalk/common/var";
+@import "../../theme-chalk/mixins/mixins";
+@import "../../theme-chalk/mixins/utils";
+
+@include b(dialog) {
+  position: relative;
+  margin: 0 auto 50px;
+  background-color: $--dialog-backgroud-color;
+  border-radius: $--border-radius-small;
+  box-shadow: $--dialog-box-shadow;
+  box-sizing: border-box;
+  width: 50%;
+  @include e(wrapper) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    margin: 0;
+    background-color: rgba($--popup-modal-background-color, $--popup-modal-opacity);
+  }
+}

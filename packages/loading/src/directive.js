@@ -30,6 +30,8 @@ LoadingDirective.install = Vue => {
             toggle(el, binding.value)
         },
         update(el, binding) {
+            const text = el.getAttribute('xg-loading-text')
+            if (text) el.maskInstance.setText(text)
             toggle(el, binding.value)
         },
         unbind(el) {

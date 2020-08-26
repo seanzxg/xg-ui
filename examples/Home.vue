@@ -1,10 +1,20 @@
 <template>
-  <div
-    v-loading.fullscreen="loading"
-    class="page-home"
-    @click="load"
-  >
-    <p>小光爱吃肉</p>
+  <div class="demo">
+    <div class="block">
+      <div
+        v-loading.fullscreen="loading"
+        :xg-loading-text="loadingText"
+        class="page-home"
+        @click="load"
+      >
+        <p>小光爱吃肉</p>
+      </div>
+      <div class="block">
+        <xg-dialog :visible.sync="dialogVisible">
+          小光爱吃肉
+        </xg-dialog>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -13,12 +23,15 @@
       name: "Home",
       data() {
         return {
-          loading: false
+          loading: false,
+          loadingText: '呀呀呀',
+          dialogVisible: true
         }
       },
       methods: {
         load() {
           this.loading = true
+          this.loadingText = '小光'
           setTimeout(() => {
             this.loading = false
           }, 3000)

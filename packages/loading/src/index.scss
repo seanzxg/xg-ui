@@ -25,6 +25,20 @@
     position: fixed;
   }
 }
+
+@include b(loading-spinner) {
+  top: 50%;
+  margin-top: #{- $--loading-spinner-size / 2};
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  .xg-loading-text {
+    color: $--color-primary;
+    margin: 3px 0;
+    font-size: 14px;
+  }
+}
+
 .loading-enter-active, .loading-leave-active {
   transition: opacity .3s;
 }

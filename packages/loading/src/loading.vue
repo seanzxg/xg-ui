@@ -4,7 +4,11 @@
       v-show="visible"
       class="xg-loading-mask"
     >
-      {{ text }}
+      <div class="xg-loading-spinner">
+        <p class="xg-loading-text">
+          {{ text }}
+        </p>
+      </div>
     </div>
   </transition>
 </template>
