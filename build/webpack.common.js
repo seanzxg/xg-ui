@@ -66,11 +66,11 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(svg|otf|ttf|woff2?|eot|gif|png|jpe?g)(\?\S*)?$/,
+                test: /\.(svg|ttf|eot|woff|woff2)$/,
                 loader: 'url-loader',
-                query: {
-                    limit: 10000,
-                    name: path.posix.join('static', '[name].[hash:7].[ext]')
+                options: {
+                  limit: 10000,
+                  name: path.posix.join('static', '[name].[hash:7].[ext]')
                 }
             }
         ]

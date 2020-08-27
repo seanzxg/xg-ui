@@ -10,7 +10,16 @@
         <p>小光爱吃肉</p>
       </div>
       <div class="block">
-        <xg-dialog :visible.sync="dialogVisible">
+        <button
+          @click="dialogVisible = true"
+        >
+          1111111111111
+        </button>
+        <xg-dialog
+          title="sdfksljfskldjdflsf"
+          :visible.sync="dialogVisible"
+          :close-on-click-modal="true"
+        >
           小光爱吃肉
         </xg-dialog>
       </div>
@@ -25,7 +34,7 @@
         return {
           loading: false,
           loadingText: '呀呀呀',
-          dialogVisible: true
+          dialogVisible: false
         }
       },
       methods: {

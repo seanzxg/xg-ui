@@ -1,5 +1,4 @@
 /* XgUi Chalk Variables */
-
 /* Color
 -------------------------- */
 // 原色
@@ -153,11 +152,25 @@ $--loading-spinner-size: 42px !default;
 /* Dialog
 --------------------------*/
 
-$--dialog-backgroud-color: $--color-white!default;
+$--dialog-background-color: $--color-white !default;
 $--dialog-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !default;
+/// fontSize||Font|1
+$--dialog-title-font-size: $--font-size-large !default;
+/// fontSize||Font|1
+$--dialog-content-font-size: 14px !default;
+/// fontLineHeight||LineHeight|2
+$--dialog-font-line-height: $--font-line-height-primary !default;
+/// padding||Spacing|3
+$--dialog-padding-primary: 20px !default;
 
 /* Popup
 -------------------------- */
 
 $--popup-modal-background-color: $--color-black !default;
 $--popup-modal-opacity: 0.5 !default;
+
+
+/* Message
+-------------------------- */
+
+$--message-close-size: 16px !default;

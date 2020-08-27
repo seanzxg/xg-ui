@@ -1,3 +1,4 @@
+import '../packages/theme-chalk/index.scss'
 import Button from '../packages/button/index';
 import Loading from '../packages/loading/index'
 import Dialog from '../packages/dialog/index'
